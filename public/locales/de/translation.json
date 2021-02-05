@@ -1,0 +1,202 @@
+{
+    "ProductType": {
+        "Question": "Was für ein digitales Produkt benötigen Sie?"
+    },
+    "BasicInfo": "Geben Sie Ihre grundlegenden Informationen an",
+    "Multiple": {
+        "Heading": "Mehrfachauswahl möglich"
+    },
+    "Tooltip": {
+        "App": {
+            "tech1": "Mit Push-Notifications, kannst mandirekte Nachrichten an das Endgerätder Nutzer senden auf denen dieSoftware installiert wurde.",
+            "tech2": "Mit NFC kannst man eine Nahfeld-Kommunikation aufbauen umkontaktlos Daten auszutauschen. Diewird z.B. bei Schließsystemen,Kontaktlosen-Bezahlsystemen, oderAutomatisierungen genutzt.",
+            "tech3": "Bluetooth ist ein drahtloseVerbindungsmöglichkeit mit geringerReichweite, welche z.B. für dieVerbindung mit technischem Zubehörwie z.B. Headsets genutzt wird, abernur Daten übertragen kann.",
+            "tech4": "Verschlüsselung sorgt dafür, dassentweder die Übertragung- oder dieSpeicherung von vertraulichen Datengesichert (verschlüsselt) wird, so dassdiese nur mit Autorisierung zugänglichsind.",
+            "tech5": "Diese Funktion ermöglicht die Ausgabevon Tönen/Musik in der Software.",
+            "tech6": "Über die Integration der Kamera kannman Bilder und Videos aufnehmen undsie in der Software verarbeiten.",
+            "tech7": "Das Gyroskop in modernenEndgeräten liefert Daten über dieBewegung und Ausrichtung desGerätes.",
+            "tech8": "Das GPS ermöglicht den Zugriff aufStandortdaten und kann für dieNavigation und Ortung genutzt werden.",
+            "tech9": "Es besteht die Möglichkeit Werbunginnerhalb der Software anzuzeigen alsz.B. Einnahmequelle.",
+            "tech10": "Ein Anmeldesystem beinhaltet dieMöglichkeit Nutzerkonten zu erstellenund zu verwalten und individualisierteVorgänge in der App abzubilden.",
+            "tech11": "Ein Rollensystem ermöglicht dieUnterscheidung verschiedener Rechte/Rollen in der App. Damit kann derZugriff auf verschiedene Funktionenund Inhalte verwaltet werden.",
+            "tech12": "Die App kann kostenpflichtigangeboten werden, so dass diese zueinem Kaufpreis erworben werdenmuss vor der Installation",
+            "tech13": "Sog. In-App Käufe bieten dieMöglichkeit innerhalb der Appkostenpflichtige Angebote zu schaffen.",
+            "tech14": "Mit der Synchronisierung, ist esmöglich Daten auf verschiedenenSystemen immer auf dem gleichenStand zu halten.",
+            "tech15": "Eine Backup-Funktion ermöglicht esden Datenbestand der App extern zusichern um bei einem Ausfall keinenDatenverlust zu verzeichnen.",
+            "tech16": "Diese Funktion ermöglicht es imBetrieb der App eine Bewertung vomNutzer zu erfragen. Dies sorgt in derRegel für mehr und bessereBewertungen.",
+            "tech17": "Die Integration von Sozialen-Netzwerken ermöglicht deren Inhalteanzuzeigen und mit ihnen zuinteragieren, als auch die Anmeldungdarüber auch für die eigene App zunutzen.",
+            "tech18": "Eine Kalenderintegration bildet denlokalen oder externen Kalender in derApp ab und kann diesen anzeigen undbearbeiten.",
+            "tech19": "Die Adressbuch Integration ermöglichtden Zugriff auf die Kontakte desAdressbuches auf dem Endgerät.",
+            "tech20": "Die Integration von Analyse-Dienstenermöglicht es Daten zur Nutzung derApp und der Nutzer zu erfassen umdas Nutzerverhalten besser zuverstehen und die App mehr zuoptimieren."
+        },
+        "Website": {
+            "tech1": "Mit Push-Notifications, kannst mandirekte Nachrichten an das Endgerätder Nutzer senden auf denen dieSoftware installiert wurde.",
+            "tech2": "Die Videoeinbindung ermöglicht dasAnzeigen und Abspielen von Videosauf der Website.",
+            "tech3": "Bestimmte Elemente lassen sichanimieren und heben das statischeAussehen der Website auf.",
+            "tech4": "Verschlüsselung sorgt dafür, dassentweder die Übertragung- oder dieSpeicherung von vertraulichen Datengesichert (verschlüsselt) wird, so dassdiese nur mit Autorisierung zugänglichsind.",
+            "tech5": "Wenn regelmäßig Neuigkeiten in Formvon Podcast oder Textbeiträgenveröffentlich werden, sollte eineinfaches Contentpflege Systemintegriert werden",
+            "tech6": "Über die Integration der Kamera kannman Bilder und Videos aufnehmen undsie in der Software verarbeiten.",
+            "tech7": "Wenn Produkte auf der Websiteverkauft werden sollen, kann ein",
+            "tech8": "Es besteht die Möglichkeit Werbunginnerhalb der Software anzuzeigen alsz.B. Einnahmequelle.",
+            "tech9": "Ein Anmeldesystem beinhaltet dieMöglichkeit Nutzerkonten zu erstellenund zu verwalten und individualisierteVorgänge in der App abzubilden.",
+            "tech10": "Ein Rollensystem ermöglicht dieUnterscheidung verschiedener Rechte/Rollen in der App. Damit kann derZugriff auf verschiedene Funktionenund Inhalte verwaltet werden.",
+            "tech11": "Die Integration von Analyse-Dienstenermöglicht es Daten zur Nutzung derApp und der Nutzer zu erfassen umdas Nutzerverhalten besser zuverstehen und die App mehr zuoptimieren.",
+            "tech12": "Mit der Synchronisierung, ist esmöglich Daten auf verschiedenenSystemen immer auf dem gleichenStand zu halten.",
+            "tech13": "Mit Pop-Up Fenstern kann man dieAufmerksamkeit der Nutzer zusätzlichbeanspruchen, z.B. wenn man dasEintragen in den Newsletterbeeinflussen möchte.",
+            "tech14": "Die Integration von Sozialen-Netzwerken ermöglicht deren Inhalteanzuzeigen und mit ihnen zuinteragieren, als auch die Anmeldungdarüber auch für die eigene App zunutzen.",
+            "tech15": "Eine Kalenderintegration bildet denlokalen oder externen Kalender in derApp ab und kann diesen anzeigen undbearbeiten.",
+            "tech16": "Die Adressbuch Integration ermöglichtden Zugriff auf die Kontakte desAdressbuches auf dem Endgerät."
+        }
+    },
+    "Progress": "Fortschritt",
+    "Back": "Zurück",
+    "Continue": "Weiter",
+    "Send": "Absenden",
+    "Answered": "be antwortet",
+    "Choices": {
+        "Choice1": "Ja",
+        "Choice2": "Nein",
+        "Choice3": "Keine Angabe"
+    },
+    "Success": {
+        "line1": "Vielen Dank für Ihr Interesse!",
+        "line2": "Wir melden uns innerhalb 2 Werktagen bei Ihnen!"
+    },
+    "App": {
+        "Type": {
+            "Heading": "Gerätetyp",
+            "Subheading": "Mehrfachauswahl möglich"
+        },
+        "Platforms": {
+            "Heading": "Für welche Systeme soll die Anwendung ausgeliefert werden? Mehrfachauswahl möglich",
+            "Subheading": "Mehrfachauswahl möglich"
+        },
+        "TargetGroup": {
+            "Question": "Zielgruppe",
+            "Choice1": "Endkunden (B2C, jeder)",
+            "Choice2": "Firmenkunden (B2B)",
+            "Choice3": "Eigene Firma/Belegschaft"
+        },
+        "Purpose": {
+            "Question": "Was soll die Anwendung tun?",
+            "Choice1": "Erfassen von Daten",
+            "Choice2": "Verarbeiten von Daten",
+            "Choice3": "Darstellungvon Daten",
+            "Choice4": "I Nähere Beschreibung"
+        },
+        "Features": {
+            "Question": "Welche Technologien und Features sollen zum Einsatz kommen? (iOS/Android)",
+            "tech1": "Push-Benachrichti gungen",
+            "tech2": "NFC",
+            "tech3": "Bluetooth",
+            "tech4": "Verschlüsselung",
+            "tech5": "In-app Töne",
+            "tech6": "Kamera",
+            "tech7": "Gyroskop",
+            "tech8": "GPS",
+            "tech9": "Werbung",
+            "tech10": "User Login",
+            "tech11": "Rollensystem",
+            "tech12": "Kostenpflichtige App",
+            "tech13": "In-app Käufe",
+            "tech14": "Synchronisierung",
+            "tech15": "Backupfunktion",
+            "tech16": "App-Bewertung",
+            "tech17": "Social Media Einbindung",
+            "tech18": "Kalendarintegration",
+            "tech19": "Adressbuchintegration",
+            "tech20": "Analytics Einbindung"
+        },
+        "Alignment": {
+            "Question": "Bildschirmausrichtung",
+            "Choice1": "Landscape",
+            "Choice2": "Portrait",
+            "Choice3": "Beides"
+        },
+        "FurtherQuestions": {
+            "Question": "Weitere Fragen",
+            "Question1": "Gibt es bereits ein Konzept?",
+            "Question2": "Sollen wir das Konzept entwerfen?",
+            "Question3": "Gibt es bereits Designs?",
+            "Question4": "Sollen wir Designs erstellen?",
+            "Question5": "Gibt es bereits eine CI-Vorgabe?"
+        },
+        "ExpertQuestions": {
+            "Question": "Experten Fragen",
+            "Question1": "Gibt es ein Backend?",
+            "Question2": "Soll es ein Backend geben?",
+            "Question3": "Apple/Google Store Account vorhanden?",
+            "Question4": "Muss die App im Hintergrund laufen können?",
+            "Question5": "Sollen wir die App veröff entliehen??"
+        },
+        "Content": {
+            "Question": "Inhalte",
+            "Choice1": "Liefern wir",
+            "Choice2": "Müssen erstellt werden",
+            "Choice3": "Noch nicht sicher"
+        },
+        "Budget": {
+            "Question": "Budget",
+            "Answer": "Bitte wähle einen Budgetrahmen den Du dir vorstellst"
+        },
+        "Idea": {
+            "Question": "Erläuterung der App Idee",
+            "Textarea": "Beginne zu schreiben…",
+            "Name": "Name",
+            "Email": "Email",
+            "Phone": "Phone Number"
+        }
+    },
+    "Website": {
+        "Pages": {
+            "Question": "Soll deine Website eine oder mehrere Seite haben?",
+            "Heading": "usgenommen Impressum & Datenschutz",
+            "Ans1": "Onepager", 
+            "Ans2": "Bis zu 3 Seiten",
+            "Ans3": "Bis zu 6 Seiten", 
+            "Ans4": "Bis zu 12 Seiten", 
+            "Ans5": "Mehr als 12 Seiten"
+        },
+        "Technologies": {
+            "Question": "Welche Technologien und Features sollen zum Einsatz kommen?",
+            "tech1": "Push-Benachrichtigungen",
+            "tech2": "Video Einbindung",
+            "tech3": "Animationseffekte",
+            "tech4": "Verschlüsselung",
+            "tech5": "Blog/ Podcast",
+            "tech6": "Kamera",
+            "tech7": "Online Shop",
+            "tech8": "Werbung",
+            "tech9": "User-Login",
+            "tech10": "Rollensystem",
+            "tech11": "Analytics Einbindung",
+            "tech12": "Synchronisierung",
+            "tech13": "Pop-Up Fenster",
+            "tech14": "Social-Media Einbindung",
+            "tech15": "Kalenderintegration",
+            "tech16": "Adressbuchintegration"
+        },
+        "DesignQuestions": {
+            "Question": "Fragen zum Design",
+            "Question1": "Gibt es bereits ein Konzept?",
+            "Question2": "Gibt es bereits eine Cl-Vorgabe?",
+            "Question3": "Gibt es bereits designs?",
+            "Question4": "Benötigen Sie ein logo?",
+            "Question5": "Müssen Fotos bearbeitet werden?",
+            "Choice1": "Ja",
+            "Choice2": "Nein",
+            "Choice3": "Keine Angabe"
+        },
+        "FurtherQuestions": {
+            "Question": "Weitere Fragen",
+            "Question1": "Soll die Website in weitere Sprachen übersetzt werden?",
+            "Question2": "Sollen Wir uns fortlaufend um deine Website kümmern?",
+            "Choice1": "Ja",
+            "Choice2": "Nein",
+            "Choice3": "Keine Angabe"
+        },
+        "WebsiteSpeed": {
+            "Question": "Wie schnell benötigst du die Website?"
+        }
+    }
+}

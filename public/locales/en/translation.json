@@ -1,0 +1,202 @@
+{
+    "ProductType": {
+        "Question": "What kind of digital product do you need?"
+    },
+    "BasicInfo": "Provide your basic information",
+    "Multiple": {
+        "Heading": "Multiple selection possible"
+    },
+    "Progress": "Progress",
+    "Back": "Back",
+    "Continue": "Continue",
+    "Send": "Send",
+    "Answered": "answered",
+    "Choices": {
+        "Choice1": "Yes",
+        "Choice2": "No",
+        "Choice3": "Not Specified"
+    },
+    "Success": {
+        "line1": "Thank you for your interest!",
+        "line2": "We will get back to you within 2 business days!"
+    },
+    "Tooltip": {
+        "App": {
+            "tech1": "With push notifications, you can send direct messages to the end device of the users on which the software is installed.",
+            "tech2": "NFC can be used to establish nearfieldcommunication for thecontactless exchange of data. This isused, for example, in lockingsystems, contactless paymentsystems, or automation systems.",
+            "tech3": "Bluetooth is a short-range wirelessconnectivity option, which is used,for example, to connect to technicalaccessories such as headsets, butcan only transmit data.",
+            "tech4": "Encryption ensures that either thetransmission or storage ofconfidential data is secured(encrypted) so that it can only beaccessed with authorization.",
+            "tech5": "This function enables the output of sounds/music in the software.",
+            "tech6": "Via the integration of the camera, youcan take pictures and videos andprocess them in the software.",
+            "tech7": "The gyroscope in modern devicesprovides data about the movementand orientation of the device.",
+            "tech8": "The GPS allows access to locationdata and can be used for navigationand tracking.",
+            "tech9": "There is a possibility to displayadvertising within the software as asource of revenue, for instance.",
+            "tech10": "A login system includes thepossibility to create and manage useraccounts and to map individualizedprocesses in the app.",
+            "tech11": "A role system allows different rights/roles to be distinguished in the app.This allows access to differentfunctions and content to bemanaged.",
+            "tech12": "The app may be offered for a fee, soit must be purchased at a purchaseprice before installation",
+            "tech13": "So-called In-app purchases offer thepossibility to create paid offers insidethe app.",
+            "tech14": "With synchronization, it is possible tokeep data on different systemsalways at the same level.",
+            "tech15": "A backup function allows the app'sdata to be backed up externally sothat no data is lost in the event of afailure",
+            "tech16": "This function makes it possible torequest a rating from the user duringoperation of the app. This usuallyensures more and better ratings.",
+            "tech17": "The integration of social networksallows to display their content andinteract with them, as well as to usethe login via them also for the ownapp.",
+            "tech18": "A calendar integration maps the localor external calendar in the app andcan display and edit it.",
+            "tech19": "The address book integration allowsaccess to the contacts of the addressbook on the mobile device.",
+            "tech20": "The integration of analytics servicesmakes it possible to collect data onthe usage of the app and the users inorder to better understand userbehavior and optimize the app more."
+        },
+        "Website": {
+            "tech1": "With push notifications, you can senddirect messages to the end device ofthe users on which the software isinstalled.",
+            "tech2": "Video integration allows you todisplay and play videos on thewebsite.",
+            "tech3": "Certain elements can be animatedand lift the static look of the website.",
+            "tech4": "Encryption ensures that either thetransmission or storage ofconfidential data is secured(encrypted) so that it can only beaccessed with authorization.",
+            "tech5": "If news is published regularly in theform of podcast or text articles, asimple content maintenance systemshould be integrated",
+            "tech6": "Via the integration of the camera, youcan take pictures and videos andprocess them in the software.",
+            "tech7": "Display products on your website",
+            "tech8": "There is a possibility to displayadvertising within the software as asource of revenue, for instance.",
+            "tech9": "A login system includes thepossibility to create and manage useraccounts and to map individualizedprocesses in the app.",
+            "tech10": "A role system allows different rights/roles to be distinguished in the app.This allows access to differentfunctions and content to bemanaged.",
+            "tech11": "The integration of analytics servicesmakes it possible to collect data onthe usage of the app and the users inorder to better understand userbehavior and optimize the app more.",
+            "tech12": "With synchronization, it is possible tokeep data on different systemsalways at the same level.",
+            "tech13": "With pop-up windows you canadditionally claim the attention of theusers, e.g. if you want to influencethe subscription to the newsletter.",
+            "tech14": "The integration of social networksallows to display their content andinteract with them, as well as to usethe login via them also for the ownapp.",
+            "tech15": "A calendar integration maps the localor external calendar in the app andcan display and edit it.",
+            "tech16": "The address book integration allowsaccess to the contacts of the addressbook on the mobile device."
+        }
+    },
+    "App": {
+        "Type": {
+            "Heading": "Device type",
+            "Subheading": "Multiple selection possible"
+        },
+        "Platforms": {
+            "Heading": "For which platforms should the application be delivered?",
+            "Subheading": "Multiple selection possible"
+        },
+        "TargetGroup": {
+            "Question": "Target Group",
+            "Choice1": "End customers (B2C, everyone)",
+            "Choice2": "Corporate customers (B2B)",
+            "Choice3": "Own company/employees"
+        },
+        "Purpose": {
+            "Question": "What is the application supposed to do?",
+            "Choice1": "Collecting data",
+            "Choice2": "Processing data",
+            "Choice3": "Displaying data",
+            "Choice4": "More detailed description"
+        },
+        "Features": {
+            "Question": "Which technologies and features should be used?",
+            "tech1": "Push Notifications",
+            "tech2": "NFC",
+            "tech3": "Bluetooth",
+            "tech4": "Encryption",
+            "tech5": "In-app sounds",
+            "tech6": "Camera",
+            "tech7": "Gyroscope",
+            "tech8": "GPS",
+            "tech9": "Advertising",
+            "tech10": "User Login",
+            "tech11": "Role System",
+            "tech12": "Paid App",
+            "tech13": "In-app purchases",
+            "tech14": "Synchronization",
+            "tech15": "Backup function",
+            "tech16": "App rating",
+            "tech17": "Social Media Integration",
+            "tech18": "Calendar Integration",
+            "tech19": "Address Book Integration",
+            "tech20": "Analytics Integration"
+        },
+        "Alignment": {
+            "Question": "Screen alignment",
+            "Choice1": "Landscape",
+            "Choice2": "Portrait",
+            "Choice3": "Both"
+        },
+        "FurtherQuestions": {
+            "Question": "Further Questions",
+            "Question1": "Is there already a concept?",
+            "Question2": "Shall we draft the concepts",
+            "Question3": "Are there already designs?",
+            "Question4": "Should we create the designs?",
+            "Question5": "Is there already a CI specification?"
+        },
+        "ExpertQuestions": {
+            "Question": "Expert Questions",
+            "Question1": "Is there a backend?",
+            "Question2": "Should there be a backend?",
+            "Question3": "Apple/Google Store account existing?",
+            "Question4": "Does the app need to be able to run in the background?",
+            "Question5": "Should we publish the app?"
+        },
+        "Content": {
+            "Question": "Content",
+            "Choice1": "We will deliver them",
+            "Choice2": "They need to be created",
+            "Choice3": "Not sure yet"
+        },
+        "Budget": {
+            "Question": "Budget",
+            "Answer": "Please choose a budget that you imagine"
+        },
+        "Idea": {
+            "Question": "Explanation of app idea",
+            "Textarea": "Start to write...",
+            "Name": "Name",
+            "Email": "Email",
+            "Phone": "Phone Number"
+        }
+    },
+    "Website": {
+        "Pages": {
+            "Question": "Do you want your website to have one or more pages?",
+            "Heading": "Excluding Imprint and Privacy",
+            "Ans1": "Onepager", 
+            "Ans2": "Up to 3 pages", 
+            "Ans3": "Up to 6 pages", 
+            "Ans4": "Up to 12 pages", 
+            "Ans5": "More than 12 pages"
+        },
+        "Technologies": {
+            "Question": "Which technologies and features should be used?",
+            "tech1": "Push Notifications",
+            "tech2": "Video Embedding",
+            "tech3": "Animation Effects",
+            "tech4": "Encryption",
+            "tech5": "Blog/ Podcast System",
+            "tech6": "Camera",
+            "tech7": "Online Shop",
+            "tech8": "Advertising",
+            "tech9": "User Login",
+            "tech10": "Role System",
+            "tech11": "Analytics Integration",
+            "tech12": "Synchronization",
+            "tech13": "Pop-Up Window",
+            "tech14": "Social Media Integration",
+            "tech15": "Calendar Integration",
+            "tech16": "Address Book Integration"
+        },
+        "DesignQuestions": {
+            "Question": "Question regarding design",
+            "Question1": "Is there already a concept?",
+            "Question2": "Is there already a CI specification?",
+            "Question3": "Are there already designs?",
+            "Question4": "Do you need a logo?",
+            "Question5": "Do pictures need to be edited?",
+            "Choice1": "Yes",
+            "Choice2": "No",
+            "Choice3": "Not Specified"
+        },
+        "FurtherQuestions": {
+            "Question": "Further Questions",
+            "Question1": "Should the website be translated into other languages?",
+            "Question2": "Do you want us to take care of your website on an ongoing basis?",
+            "Choice1": "Yes",
+            "Choice2": "No",
+            "Choice3": "Not Specified"
+        },
+        "WebsiteSpeed": {
+            "Question": "How fast do you need the website?"
+        }
+    }
+}
