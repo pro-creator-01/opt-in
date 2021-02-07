@@ -15,7 +15,7 @@ export default function DeviceTypeForm({ prevStep, nextStep, updateAppOptions, v
 
     const options = {
         Choice1: "Android",
-        Choice2: "IOS",
+        Choice2: "iOS",
         Choice3: "Browser App"
     }
 

@@ -5,7 +5,7 @@ export default function ProgressBar({ value, max, text }) {
     const { t } = useTranslation()
     return (
         <div className="progress-bar">
-                {!text ? <h4 className="progress-title">{value}/{max} {t('Answered')}</h4>
+                {!text ? <h4 className="progress-title">{value}/{max}</h4>
                 : <h4 className="progress-title">{t('Progress')}</h4>}
                 <progress value={value} max={max} className="progress-bar"></progress>
         </div>

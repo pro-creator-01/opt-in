@@ -26,7 +26,7 @@ export default function UserDetailsForm({ user, changeUserData, prevStep, nextSt
                         className="inpt1"
                         value={user.phone} 
                         onChange={changeUserData('phone')} 
-                        placeholder="Phone Number"/>
+                        placeholder={t('Phone')}/>
                     {errors.email && 
                     <label className="validation-error">{errors.email}</label>
                     }
@@ -34,7 +34,7 @@ export default function UserDetailsForm({ user, changeUserData, prevStep, nextSt
                         className="inpt1"
                         value={user.email} 
                         onChange={changeUserData('email')} 
-                        placeholder="Email Address"/>
+                        placeholder={t('Email')}/>
                     </form>                    
                     <Buttons prevStep={prevStep} nextStep={nextStep} validateForm={validateForm}/>
                 </div>

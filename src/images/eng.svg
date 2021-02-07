@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1235 650" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <path id="c" transform="scale(.0616)" d="m-.16246,0 .16246-.5 .16246.5z" fill="#fff"/>
+  <g id="b">
+   <use transform="rotate(216)" xlink:href="#c"/>
+   <use transform="rotate(288)" xlink:href="#c"/>
+   <use xlink:href="#c"/>
+   <use transform="rotate(72)" xlink:href="#c"/>
+   <use transform="rotate(144)" xlink:href="#c"/>
+  </g>
+  <g id="e">
+   <use x="-.252" xlink:href="#b"/>
+   <use x="-.126" xlink:href="#b"/>
+   <use xlink:href="#b"/>
+   <use x=".126" xlink:href="#b"/>
+   <use x=".252" xlink:href="#b"/>
+  </g>
+  <g id="d">
+   <use x="-.063" xlink:href="#e"/>
+   <use x=".315" xlink:href="#b"/>
+  </g>
+  <g id="f">
+   <use xlink:href="#d"/>
+   <use y=".054" xlink:href="#e"/>
+   <use y=".108" xlink:href="#d"/>
+   <use y=".162" xlink:href="#e"/>
+  </g>
+  <g id="g">
+   <use y="-.216" xlink:href="#f"/>
+   <use xlink:href="#f"/>
+   <use y=".216" xlink:href="#d"/>
+  </g>
+  <path id="a" d="m0 0h1235v50h-1235z" fill="#bf0a30"/>
+ </defs>
+ <path d="m0 0h1235v650h-1235z" fill="#fff"/>
+ <use xlink:href="#a"/>
+ <use y="100" xlink:href="#a"/>
+ <use y="200" xlink:href="#a"/>
+ <use y="300" xlink:href="#a"/>
+ <use y="400" xlink:href="#a"/>
+ <use y="500" xlink:href="#a"/>
+ <use y="600" xlink:href="#a"/>
+ <path d="m0 0h494v350h-494z" fill="#002868"/>
+ <use transform="matrix(650,0,0,650,247,175)" xlink:href="#g"/>
+</svg>

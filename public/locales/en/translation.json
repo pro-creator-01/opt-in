@@ -1,4 +1,6 @@
 {
+    "Phone": "Phone Number",
+    "Email": "Email Address",
     "ProductType": {
         "Question": "What kind of digital product do you need?"
     },
@@ -59,7 +61,7 @@
             "tech13": "With pop-up windows you canadditionally claim the attention of theusers, e.g. if you want to influencethe subscription to the newsletter.",
             "tech14": "The integration of social networksallows to display their content andinteract with them, as well as to usethe login via them also for the ownapp.",
             "tech15": "A calendar integration maps the localor external calendar in the app andcan display and edit it.",
-            "tech16": "The address book integration allowsaccess to the contacts of the addressbook on the mobile device."
+            "tech16": "The address book integration allows access to the contacts of the addressbook on the mobile device."
         }
     },
     "App": {

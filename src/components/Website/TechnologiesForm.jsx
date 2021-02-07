@@ -55,7 +55,7 @@ export default function TechnologiesForm({ prevStep, nextStep, updateWebsiteOpti
                         <div className={classNames("select-box", {"selected": features.includes(value)})} key={idx} onClick={() => toggleFeatures(value)}>
                             <h4>{t(`Website.Technologies.${key}`)}</h4>
                             <span className="more-info" style={features.includes(value) ? { display: 'none'} : {}}>
-                            <span className="tool" data-tip={t(`Tooltip.App.${key}`)}>&#63;</span>
+                            <span className="tool" data-tip={t(`Tooltip.Website.${key}`)}>&#63;</span>
                             </span>
                             <BiCheck size={16} color='#ffffff' style={!features.includes(value) && { display: 'none' }} />
                         </div>

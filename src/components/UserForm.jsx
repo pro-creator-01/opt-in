@@ -58,7 +58,7 @@ export default class UserForm extends Component {
                 furtherQuestions: {},
                 expertQuestions: {},
                 content: '',
-                budget: 0,
+                budget: [],
                 explanation: ''
             },
             website: {
@@ -72,6 +72,7 @@ export default class UserForm extends Component {
     } 
 
     formSubmitted = false;
+    valid = false;
 
     nextStep = () => {
         this.setState({
@@ -83,38 +84,48 @@ export default class UserForm extends Component {
         const {name, email, phone} = this.state.user
         const error = {}
 
-        if (name.trim() === '') {
-            error['name'] = 'Name is required'
-        } else {
-            error['name'] = ''
-        }
-        
-        if (!validateEmail(email) || email.trim() === '') {
-            if(email.trim() === '') {
-                error['email'] = 'Email is required'
+        if(this.formSubmitted) {
+            if (name.trim() === '') {
+                error['name'] = 'Name is required'
             } else {
-                error['email'] = 'Email must be in format john@example.com'
-            } 
-        } else {
-            error['email'] = ''
+                error['name'] = ''
+            }
+            
+            if (!validateEmail(email) || email.trim() === '') {
+                if(email.trim() === '') {
+                    error['email'] = 'Email is required'
+                } else {
+                    error['email'] = 'Email must be in format john@example.com'
+                } 
+            } else {
+                error['email'] = ''
+            }
+    
+            if (phone.trim() === '') {
+                error['phone'] = 'Phone Number is required'
+            } else {
+                error['phone'] = ''
+            }
+    
+            this.setState({ errors: error })
         }
 
-        if (phone.trim() === '') {
-            error['phone'] = 'Phone Number is required'
-        } else {
-            error['phone'] = ''
-        }
-
-        this.setState({ errors: error })
+        return new Promise((resolve, reject) => {
+            error ? resolve(error) : reject('Error')
+        })
     }
 
-    validateAndNext = () => {
-        const {name, email, phone} = this.state.errors
-        this.validate()
-        if(this.formSubmitted && name === '' && email === '' && phone === '') {
+    validateAndNext = async () => {
+        this.formSubmitted = true
+        await this.validate().then(error => {
+            this.next(error)
+        })
+    }
+
+    next = error => {
+        if(error.name === '' && error.email === '' && error.phone === '') {            
             this.setState({step: this.state.step + 1})
         }
-        this.formSubmitted = true
     }
 
     selectApp = () => {
@@ -200,7 +211,7 @@ export default class UserForm extends Component {
             }})
         } else if(type === 'budget') {
             this.setState({ app: {
-                ...this.state.app, budget: values
+                ...this.state.app, budget: [...values]
             }})
         } else if(type === 'explanation') {
             this.setState({ app: {
@@ -231,19 +242,21 @@ export default class UserForm extends Component {
             <h2>Need an Website</h2>
             <ul>
                 <li>Number of Pages: ${numberOfPages}</li>
-                <li>Design Questions: <p>
-                ${designQuestions}
-                </p></li>
-                <li>Further Questions: <p>
-                ${furtherQuestions}
-                </p></li>
-                <li>Features: <p>
-                ${features}
-                </p></li>
+                <li>Design Questions: 
+                <p>${JSON.stringify(designQuestions)}</p>
+                </li>
+                <li>Further Questions: 
+                <p>${JSON.stringify(furtherQuestions)}</p>
+                </li>
+                <li>Features: 
+                <p>${features}</p>
+                </li>
                 <li>Needed in: ${duration}</li>
             </ul>
         `;
-        axios.post('https://optin-emailer.herokuapp.com/send', message);
+        axios.post('https://optin-emailer.herokuapp.com/send', {
+            messageHtml: message
+        });
     }
 
     handleAppFormSubmit = () => {
@@ -274,21 +287,23 @@ export default class UserForm extends Component {
                 <li>Target Devices: ${targetGroup}</li>
                 <li>Screen Alignment: ${screenAlignment}</li>
                 <li>Application Purpose: ${options}<br>${description}</li>
-                <li>Further Questions: <p>
-                ${furtherQuestions}
-                </p></li>
-                <li>Expert Questions: <p>
-                ${expertQuestions}
-                </p></li>
-                <li>Features: <p>
-                ${features}
-                </p></li>
+                <li>Further Questions: 
+                ${JSON.stringify(furtherQuestions)}
+                </li>
+                <li>Expert Questions: 
+                ${JSON.stringify(expertQuestions)}
+                </li>
+                <li>Features: 
+                <p>${features}</p>
+                </li>
                 <li>Content: ${content}</li>
-                <li>Budget: ${budget}</li>
+                <li>Budget: ${budget[0]} - ${budget[1]}</li>
                 <li>Explanation: ${explanation}</li>
             </ul>
         `;
-        axios.post('https://optin-emailer.herokuapp.com/send', message);
+        axios.post('https://optin-emailer.herokuapp.com/send', {
+            messageHtml: message
+        });
     }
 
     multiStepForm = () => {

@@ -1,4 +1,6 @@
 {
+    "Phone": "Rufnummer",
+    "Email": "E-Mail-Adresse",
     "ProductType": {
         "Question": "Was für ein digitales Produkt benötigen Sie?"
     },
@@ -68,7 +70,7 @@
             "Subheading": "Mehrfachauswahl möglich"
         },
         "Platforms": {
-            "Heading": "Für welche Systeme soll die Anwendung ausgeliefert werden? Mehrfachauswahl möglich",
+            "Heading": "Für welche Systeme soll die Anwendung ausgeliefert werden?",
             "Subheading": "Mehrfachauswahl möglich"
         },
         "TargetGroup": {
@@ -81,7 +83,7 @@
             "Question": "Was soll die Anwendung tun?",
             "Choice1": "Erfassen von Daten",
             "Choice2": "Verarbeiten von Daten",
-            "Choice3": "Darstellungvon Daten",
+            "Choice3": "Darstellung von Daten",
             "Choice4": "I Nähere Beschreibung"
         },
         "Features": {
@@ -90,7 +92,7 @@
             "tech2": "NFC",
             "tech3": "Bluetooth",
             "tech4": "Verschlüsselung",
-            "tech5": "In-app Töne",
+            "tech5": "In-App Töne",
             "tech6": "Kamera",
             "tech7": "Gyroskop",
             "tech8": "GPS",
@@ -98,12 +100,12 @@
             "tech10": "User Login",
             "tech11": "Rollensystem",
             "tech12": "Kostenpflichtige App",
-            "tech13": "In-app Käufe",
+            "tech13": "In-App Käufe",
             "tech14": "Synchronisierung",
             "tech15": "Backupfunktion",
             "tech16": "App-Bewertung",
             "tech17": "Social Media Einbindung",
-            "tech18": "Kalendarintegration",
+            "tech18": "Kalenderintegration",
             "tech19": "Adressbuchintegration",
             "tech20": "Analytics Einbindung"
         },
@@ -127,7 +129,7 @@
             "Question2": "Soll es ein Backend geben?",
             "Question3": "Apple/Google Store Account vorhanden?",
             "Question4": "Muss die App im Hintergrund laufen können?",
-            "Question5": "Sollen wir die App veröff entliehen??"
+            "Question5": "Sollen wir die App veröffentliehen?"
         },
         "Content": {
             "Question": "Inhalte",
