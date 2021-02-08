@@ -439,7 +439,6 @@ progress[value]::-webkit-progress-value {
 ======================================================== */
 .inner-container {
 	width: 100%;
-	margin-top: 30px;
 }
 .inpt1, .inpt2, .inpt3 {
     width: 100%;
@@ -460,7 +459,7 @@ progress[value]::-webkit-progress-value {
     padding: 10px;
 }
 .inner-container a {
-	font-family: 'HelveticaNeueLTStd-Cn';
+	  font-family: 'HelveticaNeueLTStd-Cn';
     font-size: 18px;
     color: #1d1d1d;
     text-decoration: none !important;
@@ -469,15 +468,14 @@ progress[value]::-webkit-progress-value {
     background-color: #000;
     padding: 6px 30px;
     font-family: 'HelveticaNeueLTStd-Cn';
-    font-size: 15pt !important;
-    color: #fff !important;
-    display: inline-block;
-    text-decoration: none !important;
-    margin-top: 20px;
+    font-size: 16px;
+    color: #fff!important;
     border-radius: 6px;
-    margin: 0 auto;
-    display: table;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 .btn1:hover {
   color: #ffff4f!important;
@@ -660,11 +658,10 @@ pre {
 .tool::after {
     background: #3E474F;
     border-radius: .25em;
-    bottom: 180%;
+    top: 10%;
     font-size: 14px;
     color: #fff;
     content: attr(data-tip);
-    margin-left: -8.75em;
     padding: 1em;
     transition: all .65s cubic-bezier(.84,-0.18,.31,1.26) .2s;
     transform:  scale(.6) translateY(50%);  
@@ -760,6 +757,17 @@ pre {
     justify-content: space-between;
 }
 
+.duration-range {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.duration-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 .slider-range h4 {
   margin-top: 20px;
 }
@@ -782,8 +790,7 @@ pre {
   color: red;
   padding: 10px;
   height: 20px;
-  font-size: 12px;
-  transition: all 2s ease-in-out;
+  font-size: 26px;
 }
 
 .duration-slider {
@@ -812,4 +819,13 @@ pre {
   height: 100px;
   border-radius: 20px;
   cursor: pointer;
+}
+
+.highlight {
+  border: 2px solid rgb(224, 3, 3);
+}
+
+.heading-container {
+  text-align: center;
+  margin-bottom: 30px;
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { AiOutlineArrowUp } from 'react-icons/ai'
 
-export default function Buttons({prevStep, nextStep, step, submit = false, submitForm, validateForm = null}) {
+export default function Buttons({prevStep, nextStep, step, submit = false, submitForm, validateForm = null, error = false}) {
     const { t } = useTranslation()
     return (
             <div className="buttons-row">
@@ -16,12 +16,16 @@ export default function Buttons({prevStep, nextStep, step, submit = false, submi
                     {submit
                     ? <a onClick={e => {
                         e.preventDefault()
-                        submitForm()
-                        nextStep()
+                        if(!error) {
+                            submitForm()
+                            nextStep()
+                        }
                     }} className="btn1">{t('Send')}</a>
                     : <a onClick={e => {
                         e.preventDefault()
-                        validateForm ? validateForm() : nextStep()
+                        if(!error) {
+                            validateForm ? validateForm() : nextStep()
+                        }
                     }} className="btn1">{t('Continue')}</a>
                     }
                     <a className="button-width"></a>

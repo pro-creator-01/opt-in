@@ -239,7 +239,7 @@ export default class UserForm extends Component {
             <p>Customer Name: ${user.name}</p>
             <p>Customer Email: ${user.email}</p>
             <p>Phone Number: ${user.phone}</p>
-            <h2>Need an Website</h2>
+            <h2>Needs a Website</h2>
             <ul>
                 <li>Number of Pages: ${numberOfPages}</li>
                 <li>Design Questions: 
@@ -255,6 +255,7 @@ export default class UserForm extends Component {
             </ul>
         `;
         axios.post('https://optin-emailer.herokuapp.com/send', {
+            name: user.name,
             messageHtml: message
         });
     }
@@ -280,7 +281,7 @@ export default class UserForm extends Component {
             <p>Customer Name: ${user.name}</p>
             <p>Customer Email: ${user.email}</p>
             <p>Phone Number: ${user.phone}</p>
-            <h2>Need an App</h2>
+            <h2>Needs an App</h2>
             <ul>
                 <li>Device Type: ${deviceType}</li>
                 <li>Platforms: ${platforms}</li>
@@ -302,6 +303,7 @@ export default class UserForm extends Component {
             </ul>
         `;
         axios.post('https://optin-emailer.herokuapp.com/send', {
+            name: user.name,
             messageHtml: message
         });
     }

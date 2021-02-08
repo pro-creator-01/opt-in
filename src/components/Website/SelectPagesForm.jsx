@@ -23,8 +23,13 @@ export default function SelectPagesForm({ prevStep, nextStep, updateWebsiteOptio
 
     return (
         <Fragment>
-            <h2 className="header">{t('Website.Pages.Question')}</h2>
-            <h5>({t('Website.Pages.Heading')})</h5>
+            <div className="heading-container">
+                <h2 className="header">{t('Website.Pages.Question')}</h2>
+                <h5>({t('Website.Pages.Heading')})</h5>
+            </div>
+            {values === '' && 
+                        <label className="validation-error">*</label>
+                    }
             <div className="form-container">
                 <div className="inner-container">
                     {Object.entries(options).map(([key, value], idx) => (
@@ -33,7 +38,7 @@ export default function SelectPagesForm({ prevStep, nextStep, updateWebsiteOptio
                             <BiCheck size={16} color='#ffffff' style={selectedOption !== value && { display: 'none' }} />
                         </div>
                     ))}
-                <Buttons prevStep={prevStep} nextStep={nextStep}/>
+                <Buttons prevStep={prevStep} nextStep={nextStep} error={values === '' ? true : false}/>
                 </div>
             </div>
             <ProgressBar value="1" max="6"/>

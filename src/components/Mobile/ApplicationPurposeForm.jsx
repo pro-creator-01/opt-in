@@ -8,6 +8,7 @@ import ProgressBar from '../ProgressBar'
 export default function DeviceTypeForm({ prevStep, nextStep, updateAppOptions, values }) {
     const [selectedOptions, setSelectedOptions] = useState([...values.options])
     const [description, setDescription] = useState(values.description)
+    const [error, setError] = useState(false)
     const { t } = useTranslation()
 
     useEffect(() => {
@@ -16,6 +17,11 @@ export default function DeviceTypeForm({ prevStep, nextStep, updateAppOptions, v
             description
         }
         updateAppOptions('purpose', form)
+        if(selectedOptions.length < 1 || description === '') {
+            setError(true)
+        } else {
+            setError(false)
+        }
     }, [selectedOptions, description])
 
     const options = {
@@ -39,7 +45,12 @@ export default function DeviceTypeForm({ prevStep, nextStep, updateAppOptions, v
 
     return (
         <Fragment>
-            <h2 className="header">{t('App.Purpose.Question')}</h2>
+            <div className="heading-container">
+                <h2 className="header">{t('App.Purpose.Question')}</h2>
+            </div>
+            {error && 
+                        <label className="validation-error">*</label>
+                    }
             <div className="form-container">
                 <div className="inner-container">
                 {Object.entries(options).map(([key, value], idx) => (
@@ -49,7 +60,7 @@ export default function DeviceTypeForm({ prevStep, nextStep, updateAppOptions, v
                     </div>
                 ))}
                 <textarea value={description} className="text-area" placeholder={t(`App.Purpose.Choice4`)} onChange={handleChange}></textarea>
-                <Buttons prevStep={prevStep} nextStep={nextStep}/>
+                <Buttons prevStep={prevStep} nextStep={nextStep} error={error}/>
             </div>
             </div>
             <ProgressBar value="4" max="12"/>

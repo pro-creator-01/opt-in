@@ -17,10 +17,13 @@ export default function ExplanationForm({ prevStep, nextStep, updateAppOptions, 
 
     return (
         <Fragment>
+            <div className="heading-container">
             <h2 className="header" style={{textAlign: 'center', fontWeight: 500}}>{t('App.Idea.Question')}</h2>
+            </div>
+            {description === '' && <label className="validation-error">*</label>}
             <div className="form-container-scnd">
             <textarea value={description} className="text-area" style={{height: '300px'}} placeholder={t(`App.Idea.Textarea`)} onChange={handleChange}></textarea>
-            <Buttons prevStep={prevStep} nextStep={nextStep} submit={true} submitForm={handleSubmit}/>
+            <Buttons prevStep={prevStep} nextStep={nextStep} submit={true} submitForm={handleSubmit} error={description === '' ? true : false}/>
             </div>
             <ProgressBar value="11" max="12"/>
         </Fragment>

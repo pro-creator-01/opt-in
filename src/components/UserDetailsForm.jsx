@@ -1,4 +1,5 @@
 import React, { Fragment, useState } from 'react'
+import classNames from 'classnames'
 import { useTranslation } from 'react-i18next'
 import Buttons from './Buttons';
 
@@ -10,32 +11,26 @@ export default function UserDetailsForm({ user, changeUserData, prevStep, nextSt
             <div className="form-container">
                 <div className="inner-container">
                     <form>
-                    {errors.name && 
-                    <label className="validation-error">{errors.name}</label>
+                    {(errors.name || errors.email || errors.phone) && 
+                    <label className="validation-error">*</label>
                     }
                     <input type="text" 
-                        className="inpt1" 
+                        className={classNames("inpt1", { "highlight": errors.name})}
                         value={user.name}
                         onChange={changeUserData('name')} 
                         id="name"
-                        placeholder="Name"/>
-                    {errors.phone && 
-                    <label className="validation-error">{errors.phone}</label>
-                    }
-                    <input type="number" 
-                        className="inpt1"
-                        value={user.phone} 
-                        onChange={changeUserData('phone')} 
-                        placeholder={t('Phone')}/>
-                    {errors.email && 
-                    <label className="validation-error">{errors.email}</label>
-                    }
+                        placeholder="Name"/>                    
                     <input type="email" 
-                        className="inpt1"
+                        className={classNames("inpt1", { "highlight": errors.email})}
                         value={user.email} 
                         onChange={changeUserData('email')} 
                         placeholder={t('Email')}/>
-                    </form>                    
+                    <input type="number" 
+                        className={classNames("inpt1", { "highlight": errors.phone})}
+                        value={user.phone} 
+                        onChange={changeUserData('phone')} 
+                        placeholder={t('Phone')}/>
+                    </form>
                     <Buttons prevStep={prevStep} nextStep={nextStep} validateForm={validateForm}/>
                 </div>
             </div>

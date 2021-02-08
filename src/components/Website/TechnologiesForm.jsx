@@ -44,13 +44,16 @@ export default function TechnologiesForm({ prevStep, nextStep, updateWebsiteOpti
 
     return (
         <Fragment>
-            <div style={{textAlign: 'center'}}>
+            <div className="heading-container">
             <h2 className="header">{t('Website.Technologies.Question')}</h2>
             <h4>{t('Multiple.Heading')}</h4>
             </div>
+            {features.length < 1 && 
+                        <label className="validation-error">*</label>
+                    }
             <div className="form-container-scnd">
                 <div className="inner-container">
-                <div className="grid-selection"  style={{marginTop: 40}}>
+                <div className="grid-selection">
                     {Object.entries(options).map(([key, value], idx) => (
                         <div className={classNames("select-box", {"selected": features.includes(value)})} key={idx} onClick={() => toggleFeatures(value)}>
                             <h4>{t(`Website.Technologies.${key}`)}</h4>
@@ -61,7 +64,7 @@ export default function TechnologiesForm({ prevStep, nextStep, updateWebsiteOpti
                         </div>
                     ))}
                 </div>
-                <Buttons prevStep={prevStep} nextStep={nextStep}/>
+                <Buttons prevStep={prevStep} nextStep={nextStep} error={features.length < 1 ? true : false}/>
                 
                 </div>
             </div>

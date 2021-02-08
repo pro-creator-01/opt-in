@@ -21,7 +21,12 @@ export default function ContentForm({ prevStep, nextStep, updateAppOptions, valu
 
     return (
         <Fragment>
+            <div className="heading-container">
             <h2 className="header" style={{textAlign: 'center', fontWeight: 500}}>{t('App.Content.Question')}</h2>
+            </div>
+            {selectedOptions === '' && 
+                        <label className="validation-error">*</label>
+                    }
             <div className="form-container">
             <div className="inner-container">
                 {Object.entries(options).map(([key, value], idx) => (
@@ -30,7 +35,7 @@ export default function ContentForm({ prevStep, nextStep, updateAppOptions, valu
                         <BiCheck size={16} color='#ffffff' style={selectedOptions !== value && { display: 'none' }} />
                     </div>
                 ))}
-                <Buttons prevStep={prevStep} nextStep={nextStep}/>
+                <Buttons prevStep={prevStep} nextStep={nextStep} error={selectedOptions === '' ? true : false}/>
             </div>
             </div>
             <ProgressBar value="9" max="12"/>

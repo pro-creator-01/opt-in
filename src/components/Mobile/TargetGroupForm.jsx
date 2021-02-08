@@ -21,7 +21,12 @@ export default function TargetGroupForm({ prevStep, nextStep, updateAppOptions, 
 
     return (
         <Fragment>
-            <h2 className="header">{t('App.TargetGroup.Question')}</h2>
+            <div className="heading-container">
+                <h2 className="header">{t('App.TargetGroup.Question')}</h2>
+            </div>
+            {selectedOptions === '' && 
+                        <label className="validation-error">*</label>
+                    }
             <div className="form-container">
                 <div className="inner-container">
                 <div className="options">
@@ -32,7 +37,7 @@ export default function TargetGroupForm({ prevStep, nextStep, updateAppOptions, 
                     </div>
                 ))}
             </div>
-            <Buttons prevStep={prevStep} nextStep={nextStep}/>
+            <Buttons prevStep={prevStep} nextStep={nextStep} error={selectedOptions === '' ? true : false}/>
                 </div>
             </div>
             <Fragment>

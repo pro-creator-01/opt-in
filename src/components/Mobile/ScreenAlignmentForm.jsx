@@ -21,7 +21,12 @@ export default function ScreenAlignmentForm({ prevStep, nextStep, updateAppOptio
 
     return (
         <Fragment>
-            <h2 className="header">{t('App.Alignment.Question')}</h2>
+            <div className="heading-container">
+                <h2 className="header">{t('App.Alignment.Question')}</h2>
+            </div>
+            {selectedOptions === '' && 
+                        <label className="validation-error">*</label>
+                    }
             <div className="form-container">
             <div className="inner-container">
                 {Object.entries(options).map(([key, value], idx) => (
@@ -30,7 +35,7 @@ export default function ScreenAlignmentForm({ prevStep, nextStep, updateAppOptio
                         <BiCheck size={16} color='#ffffff' style={selectedOptions !== value && { display: 'none' }} />
                     </div>
                 ))}
-                <Buttons prevStep={prevStep} nextStep={nextStep}/>
+                <Buttons prevStep={prevStep} nextStep={nextStep} error={selectedOptions === '' ? true : false}/>
             </div>
             </div>
             <ProgressBar value="6" max="12"/>

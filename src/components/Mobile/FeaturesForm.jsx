@@ -48,10 +48,13 @@ export default function FeaturesForm({ prevStep, nextStep, updateAppOptions, val
 
     return (
         <Fragment>
-            <div style={{marginBottom: '30px', textAlign: 'center'}}>
+            <div className="heading-container">
             <h2 className="header" style={{marginTop: '70px'}}>{t(`App.Features.Question`)}</h2>
             <h4>{t(`Multiple.Heading`)}</h4>
             </div>
+            {features.length < 1 && 
+                        <label className="validation-error">*</label>
+                    }
             <div className="form-container-scnd">
             <Fragment>
             <div className="grid-selection">
@@ -65,7 +68,7 @@ export default function FeaturesForm({ prevStep, nextStep, updateAppOptions, val
                     </div>
                 ))}
             </div>
-            <Buttons prevStep={prevStep} nextStep={nextStep}/>
+            <Buttons prevStep={prevStep} nextStep={nextStep} error={features.length < 1 ? true : false}/>
             </Fragment>
             </div>
             <Fragment>
