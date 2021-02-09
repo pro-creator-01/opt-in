@@ -57,9 +57,12 @@ export default function TechnologiesForm({ prevStep, nextStep, updateWebsiteOpti
                     {Object.entries(options).map(([key, value], idx) => (
                         <div className={classNames("select-box", {"selected": features.includes(value)})} key={idx} onClick={() => toggleFeatures(value)}>
                             <h4>{t(`Website.Technologies.${key}`)}</h4>
-                            <span className="more-info" style={features.includes(value) ? { display: 'none'} : {}}>
-                            <span className="tool" data-tip={t(`Tooltip.Website.${key}`)}>&#63;</span>
-                            </span>
+                            <div className="tooltip-ex">
+                                <span className="more-info" style={features.includes(value) ? { display: 'none'} : {}}>&#63;</span>
+                                <span class="tooltip-ex-text">
+                                {t(`Tooltip.Website.${key}`)}
+                                </span>
+                            </div>
                             <BiCheck size={16} color='#ffffff' style={!features.includes(value) && { display: 'none' }} />
                         </div>
                     ))}
@@ -69,7 +72,9 @@ export default function TechnologiesForm({ prevStep, nextStep, updateWebsiteOpti
                 </div>
             </div>
             <Fragment>
+            <div style={{marginTop: 30}}>
             <ProgressBar value="2" max="6"/>
+            </div>
             </Fragment>
         </Fragment>
     )

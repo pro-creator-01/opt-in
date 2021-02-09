@@ -25,7 +25,9 @@ export default function ExplanationForm({ prevStep, nextStep, updateAppOptions, 
             <textarea value={description} className="text-area" style={{height: '300px'}} placeholder={t(`App.Idea.Textarea`)} onChange={handleChange}></textarea>
             <Buttons prevStep={prevStep} nextStep={nextStep} submit={true} submitForm={handleSubmit} error={description === '' ? true : false}/>
             </div>
+            <div style={{marginTop: 50}}>
             <ProgressBar value="11" max="12"/>
+            </div>
         </Fragment>
     )
 }

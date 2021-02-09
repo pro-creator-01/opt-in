@@ -7,13 +7,15 @@ export default function UserDetailsForm({ user, changeUserData, prevStep, nextSt
     const { t } = useTranslation()
     return (
         <Fragment>
+            <div className="heading-container">
             <h2 className="header">{t('BasicInfo')}</h2>
-            <div className="form-container">
-                <div className="inner-container">
-                    <form>
-                    {(errors.name || errors.email || errors.phone) && 
+            </div>
+            {(errors.name || errors.email || errors.phone) && 
                     <label className="validation-error">*</label>
                     }
+            <div className="form-container">
+                <div className="inner-container">
+                    <form>                    
                     <input type="text" 
                         className={classNames("inpt1", { "highlight": errors.name})}
                         value={user.name}

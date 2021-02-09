@@ -61,9 +61,12 @@ export default function FeaturesForm({ prevStep, nextStep, updateAppOptions, val
                 {Object.entries(options).map(([key, value], idx) => (
                     <div className={classNames("select-box", {"selected": features.includes(value)})} key={idx} onClick={() => toggleFeatures(value)}>
                         <h4>{t(`App.Features.${key}`)}</h4>
-                        <span className="more-info" style={features.includes(value) ? { display: 'none'} : {}}>
-                        <span className="tool" data-tip={t(`Tooltip.App.${key}`)}>&#63;</span>
-                        </span>
+                        <div className="tooltip-ex">
+                            <span className="more-info" style={features.includes(value) ? { display: 'none'} : {}}>&#63;</span>
+                            <span class="tooltip-ex-text">
+                            {t(`Tooltip.App.${key}`)}
+                            </span>
+                        </div>
                         <BiCheck size={16} color='#ffffff' style={!features.includes(value) && { display: 'none' }} />
                     </div>
                 ))}
@@ -71,9 +74,9 @@ export default function FeaturesForm({ prevStep, nextStep, updateAppOptions, val
             <Buttons prevStep={prevStep} nextStep={nextStep} error={features.length < 1 ? true : false}/>
             </Fragment>
             </div>
-            <Fragment>
+            <div style={{marginTop: 130}}>
             <ProgressBar value="5" max="12"/>
-            </Fragment>
+            </div>
         </Fragment>
     )
 }
