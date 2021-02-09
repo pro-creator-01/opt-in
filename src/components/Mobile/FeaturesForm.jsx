@@ -57,7 +57,7 @@ export default function FeaturesForm({ prevStep, nextStep, updateAppOptions, val
                     }
             <div className="form-container-scnd">
             <Fragment>
-            <div className="grid-selection">
+            <div className="feature-selection">
                 {Object.entries(options).map(([key, value], idx) => (
                     <div className={classNames("select-box", {"selected": features.includes(value)})} key={idx} onClick={() => toggleFeatures(value)}>
                         <h4>{t(`App.Features.${key}`)}</h4>

@@ -17,7 +17,6 @@
 	.inpt1 {width: 97%;}
 	.inpt3 {width: 97%;}
 	.form-container-scnd {width: 90%;}
-	.header {padding-top: 30px;}
 	.button-width {
 		width: 15%;
 	}
@@ -35,7 +34,11 @@
 
 @media only screen  and (max-width: 830px) {
 	.grid-selection {
-		grid-template-columns: 2fr 2fr;
+		grid-template-rows: repeat(8, 1fr);
+	}
+
+	.feature-selection {
+		grid-template-rows: repeat(10, 1fr);
 	}
 
 	.check-box {
@@ -166,7 +169,10 @@
 	.answer-box-rgt ul li a {font-size: 13px;}
 	.card-box { width: 100%; }
 	.grid-selection {
-		grid-template-columns: 2fr;
+		grid-template-rows: repeat(16, 1fr);
+	}
+	.feature-selection {
+		grid-template-rows: repeat(20, 1fr);
 	}
 }
 
